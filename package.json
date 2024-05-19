@@ -1,0 +1,14 @@
+{
+  "name": "talktome_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FET L300 Group 4 client server 2024",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

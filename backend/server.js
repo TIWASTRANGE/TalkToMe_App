@@ -6,6 +6,8 @@ const { chats } = require('./data/data');
 
 // creating instance of eexpress called app
 const app = express()
+
+// configuring the dotenv to hide important information
 dotenv.config()
 
 // creating express server API
@@ -18,7 +20,9 @@ app.get('/api/chat', (req, res) =>{
 });
 
 app.get('/api/chat/:id', (req, res) =>{
+    // search the chats for a single chat using the id
     const singleChat = chats.find((c) => c._id === req.params.id)
+    // chat not existing?
     if(!singleChat){
         res.status(404).send("Chat not found")
     }
